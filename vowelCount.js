@@ -6,8 +6,8 @@ function getCount(string) {
   var vowelsCount = 0;
   var vowelsArr = ['a','e','i','o','u'];
   var stringArray = string.split('');
-  
 
+  hello
 
   return vowelsCount;
 }
