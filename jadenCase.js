@@ -1,17 +1,11 @@
 // identify the chars that follow a space
 // capitalize them
 String.prototype.toJadenCase = function() {
-  var words = this.split(' ');
-  var x = 0;
   var newString = ''
-  words.forEach(function(currentWord) {
-    var capital = currentWord.charAt(0).toUpperCase();
-    var wordWithoutFirst = currentWord.substr(1);
-    var newWords = capital + wordWithoutFirst
-    newString += newWords + ' '
-    x++;
+  var words = this.split(' ').map(function(currentWord) {
+    return currentWord.charAt(0).toUpperCase() + currentWord.substr(1)
   });
-  return newString.substr(0, newString.length-1)
+  return words.join(' ')
 };
 
 "How can mirrors be real if our eyes aren't real".toJadenCase()
