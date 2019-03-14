@@ -1,15 +1,10 @@
 def search_substr(full_text, search_text, allow_overlap = true)
-  count = 0
-  return count if search_text == ''
-  i = 0
+  return 0 if search_text.empty?
+  count = i = 0
   while i < full_text.length
-    if allow_overlap
-      count += 1 if full_text[i, search_text.length] == search_text
-    else
-      if full_text[i, search_text.length] == search_text
-        count += 1
-        i += search_text.length
-      end
+    if full_text[i, search_text.length] == search_text
+      count += 1
+      i += (search_text.length - 1) unless allow_overlap
     end
     i += 1
   end
