@@ -1,4 +1,4 @@
-# @pyth(on)agoras theorem
+# pyth(on)agoras theorem
 
 # this method takes three integers
 # and return whether or not a triangle
