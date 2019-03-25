@@ -5,5 +5,5 @@
 function digitalRoot(n) {
   var digits = ("" + n).split("").map(Number);
   var sum = digits.reduce(function(a, b) { return a + b; });
-  if(sum > 9) { return digitalRoot(sum) } else { return sum };
+  if(sum > 9) { return digitalRoot(sum) } else return sum;
 }
