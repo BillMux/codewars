@@ -20,8 +20,3 @@ function solution(roman) {
   };
   return count
 }
-
-console.log(solution('I'), solution('I') === 1)
-console.log(solution('III'), solution('III') === 3)
-console.log(solution('V'), solution('V') === 5)
-console.log(solution('IV'), solution('IV') === 4)
