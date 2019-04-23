@@ -16,5 +16,18 @@
 # sample tests.
 
 def first_non_repeating_letter(string)
-  'a'
+  letter_group = letters.split('').group_by{ |x| x.downcase }
+  uniqs = letter_group.reject{ |letter, arr| arr.count > 1 }.keys
+  for x in 0..uniqs.length
+
+  end
+
+
+
+  # letters = string.split('')
+  # letter_group = letters.group_by{ |x| x.downcase }
+  # p letter_group
+  # uniqs = letter_group.reject{ |letter, arr| arr.count > 1 }.keys
+  # p uniqs
+  # '' + uniqs[0].to_s
 end
