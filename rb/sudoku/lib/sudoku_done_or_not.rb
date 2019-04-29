@@ -10,11 +10,9 @@ def repeat?(grid)
 end
 
 def squares(grid)
-  squares = []
-  i = 0
-  j = 0
-  while i < 9
-    while j < 9
+  squares, i, j = [], 0, 0
+  while i < grid.length
+    while j < grid[0].length
       squares << [
         grid[i][j], grid[i][j + 1], grid[i][j + 2],
         grid[i + 1][j], grid[i + 1][j + 1], grid[i + 1][j + 2],
