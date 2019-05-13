@@ -30,10 +30,10 @@ class TestIncrementString(unittest.TestCase):
         self.assertEqual(increment_string('hell0 world00'), 'hell0 world01')
         self.assertEqual(increment_string('hell0 world000'), 'hell0 world001')
 
-    def test_works_with_empty_strings(self):
+    def test_works_empty_strings(self):
         self.assertEqual(increment_string(''), '1')
 
-    def test_string_with_only_one_digit_number(self):
+    def test_one_digit_number(self):
         self.assertEqual(increment_string('1'), '2')
 
     def test_long_numbers_without_letters(self):
