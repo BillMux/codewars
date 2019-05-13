@@ -24,6 +24,7 @@ class TestIncrementString(unittest.TestCase):
     def test_numbers_beginning_with_zeroes(self):
         self.assertEqual(increment_string('hell0 world01'), 'hell0 world02')
         self.assertEqual(increment_string('hell0 world099'), 'hell0 world100')
+        self.assertEqual(increment_string('hell0 world09'), 'hell0 world10')
 
     def test_string_ending_with_multiple_zeroes(self):
         self.assertEqual(increment_string('hell0 world00'), 'hell0 world01')
@@ -31,3 +32,9 @@ class TestIncrementString(unittest.TestCase):
 
     def test_works_with_empty_strings(self):
         self.assertEqual(increment_string(''), '1')
+
+    def test_string_with_only_one_digit_number(self):
+        self.assertEqual(increment_string('1'), '2')
+
+    def test_long_numbers_without_letters(self):
+        self.assertEqual(increment_string('8846662'), '8846663')
