@@ -15,6 +15,5 @@ def name_list(names):
             string += f"{name} & "
         elif names_left == 1:
             string += name
-        else: return ''
 
     return string
