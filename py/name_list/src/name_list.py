@@ -1,6 +1,7 @@
-def name_list(names):
-    # why would you even use a hash th0?
+# Input: and array of hashes containing information about people incl. name
+# Output: a formatted string containing the names of these people
 
+def name_list(names):
     list = []
     string = ''
     for hsh in names:
@@ -15,5 +16,5 @@ def name_list(names):
         elif names_left == 1:
             string += name
         else: return ''
-        
+
     return string
