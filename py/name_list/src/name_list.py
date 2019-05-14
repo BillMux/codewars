@@ -6,7 +6,6 @@ def name_list(names):
     for hsh in names:
         list.append(hsh['name'])
 
-
     for index, name in enumerate(list):
         names_left = len(list) - index
         if names_left > 2:
@@ -16,4 +15,5 @@ def name_list(names):
         elif names_left == 1:
             string += name
         else: return ''
+        
     return string
