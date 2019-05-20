@@ -17,9 +17,8 @@ MORSE = {
 }
 def decodeMorse(code):
     output = ''
-    for word in code.strip().split('  '):
+    for word in code.split('  '):
         for letter in word.split():
             output += MORSE[letter]
-
         output += ' '
-    return output[:-1]
+    return output.strip()
