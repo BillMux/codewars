@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative '../lib/int32_to_ipv4'
 
 describe '#int32_to_ipv4' do
