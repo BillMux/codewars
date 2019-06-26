@@ -1,0 +1,16 @@
+{
+  "name": "rot13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "jasmine": "^3.4.0",
+    "jasmine-node": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/jasmine-node/bin/jasmine-node --verbose --junitreport spec"
+  },
+  "author": "",
+  "license": "ISC"
+}
