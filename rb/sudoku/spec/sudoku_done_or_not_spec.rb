@@ -8,6 +8,11 @@ describe '#valid?' do
   it 'returns true if row contains unique integer values from one to nine' do
     expect(valid?([[1, 2, 3, 4, 5, 6, 7, 8, 9]])).to be true
   end
+
+  it 'returns false if any numbers over 9' do
+    expect(valid?([[5, 3, 1, 6, 7, 4, 9, 11, 2]])).to be false
+    expect(valid?([[0, 2, 3, 4, 5, 6, 7, 8, 10]])).to be false
+  end
 end
 
 describe '#sudoku_is_valid' do
@@ -16,10 +21,12 @@ describe '#sudoku_is_valid' do
   end
 
   it 'returns false!" if numbers repeat in column' do
-    expect(sudoku_is_valid([
-      [5, 3, 4, 6, 7, 4, 9, 1, 2],
-      [6, 3, 2, 1, 9, 5, 3, 4, 8]
-    ])).to be false
+    expect(sudoku_is_valid(
+      [
+        [5, 3, 4, 6, 7, 4, 9, 1, 2],
+        [6, 3, 2, 1, 9, 5, 3, 4, 8]
+      ]
+    )).to be false
   end
 
   it 'returns false if incomplete 3x3 squares' do
@@ -50,9 +57,5 @@ describe '#sudoku_is_valid' do
         [3, 4, 5, 2, 8, 6, 1, 7, 9]
       ]
     )).to eq true
-  end
-
-  it 'returns false if any numbers over 9' do
-    expect(sudoku_is_valid([[5, 3, 1, 6, 7, 4, 9, 11, 2]])).to be false
   end
 end
