@@ -2,11 +2,11 @@ require_relative '../lib/sudoku_done_or_not.rb'
 
 describe '#valid?' do
   it 'returns false if row contains duplicate' do
-    expect(valid?([[1, 1]])).to be false
+    expect(valid?([[1, 1, 3, 4, 5, 6, 7, 8, 9]])).to be false
   end
 
-  it 'returns true if row contains unique values' do
-    expect(valid?([[1, 2]])).to be true
+  it 'returns true if row contains unique integer values from one to nine' do
+    expect(valid?([[1, 2, 3, 4, 5, 6, 7, 8, 9]])).to be true
   end
 end
 
