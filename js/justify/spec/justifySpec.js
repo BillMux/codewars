@@ -1,5 +1,10 @@
 'use strict';
 
 describe('justify', function() {
-  var justify = require('../src/justify');
+  var Justify = require('../src/justify');
+  var justify
+
+  it('exists', function() {
+    justify = 
+  });
 });

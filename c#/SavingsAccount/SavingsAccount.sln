@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingsAccountTests", "SavingsAccountTests\SavingsAccountTests.csproj", "{2E6B6F19-F731-4A88-A195-07B2E880C756}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingsAccount", "SavingsAccount\SavingsAccount.csproj", "{D5ED2E98-5D9F-48B0-8442-24A089900334}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|anycpu = Debug|anycpu
+		Release|anycpu = Release|anycpu
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E6B6F19-F731-4A88-A195-07B2E880C756}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{2E6B6F19-F731-4A88-A195-07B2E880C756}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{2E6B6F19-F731-4A88-A195-07B2E880C756}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{2E6B6F19-F731-4A88-A195-07B2E880C756}.Release|anycpu.Build.0 = Release|Any CPU
+		{D5ED2E98-5D9F-48B0-8442-24A089900334}.Debug|anycpu.ActiveCfg = Debug|Any CPU
+		{D5ED2E98-5D9F-48B0-8442-24A089900334}.Debug|anycpu.Build.0 = Debug|Any CPU
+		{D5ED2E98-5D9F-48B0-8442-24A089900334}.Release|anycpu.ActiveCfg = Release|Any CPU
+		{D5ED2E98-5D9F-48B0-8442-24A089900334}.Release|anycpu.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
