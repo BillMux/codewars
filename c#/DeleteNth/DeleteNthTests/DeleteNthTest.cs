@@ -22,9 +22,16 @@ namespace Tests
             ExpectedResult = new int[] { 1, 1, 3, 3, 7, 2, 2, 2 }
         )]
 
+        [TestCase(
+            new int[] { 1, 3, 1, 3, 2, 2, 3 }, 2,
+            ExpectedResult = new int[] { 1, 3, 1, 3, 2, 2 }
+        )]
+
         public int[] DivideTest(int[] input, int limit)
         {
             return test.Run(input, limit);
         }
     }
 }
+
+// Expected: 1,3,1,3,2,2 Actual: 1,3,1,3,2,2,3

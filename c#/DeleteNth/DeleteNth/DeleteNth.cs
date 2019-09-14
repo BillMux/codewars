@@ -14,16 +14,8 @@ namespace Kata
 
             for (int i = 0; i < numbersList.Count; i++)
             {
-                int number = numbersList[i];
-                if (countTable.Contains(number))
-                {
-                    countTable[number] = (int)countTable[number] + 1;
-                }
-                else
-                {
-                    countTable.Add(number, 1);
-                }
-                if ((int)countTable[number] > limit)
+                CountNumbers(countTable, numbersList[i]);
+                if ((int)countTable[numbersList[i]] > limit)
                 {
                     numbersList.RemoveAt(i);
                 }
@@ -31,5 +23,16 @@ namespace Kata
             return numbersList.ToArray();
         }
 
+        private void CountNumbers(Hashtable table, int number)
+        {
+            if (table.Contains(number))
+            {
+                table[number] = (int)table[number] + 1;
+            }
+            else
+            {
+                table.Add(number, 1);
+            }
+        }
     }
 }
