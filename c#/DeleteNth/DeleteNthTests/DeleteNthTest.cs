@@ -7,30 +7,24 @@ namespace Tests
     {
         DeleteNth test = new DeleteNth();
 
-        [Test]
-        public void TestListNotExceedingLimitReturnsSameList()
-        {
-            int[] input = { 1, 2, 3 };
-            int[] expect = test.Run(input, 2);
-            Assert.AreEqual(expect, input);
-        }
+        [TestCase(
+            new int[] { 1, 2, 3 }, 2,
+            ExpectedResult = new int[] { 1, 2, 3 }
+        )]
 
-        [Test]
-        public void TestListOneNumberExceedsLimit()
-        {
-            int[] input = { 1, 2, 3, 3, 3 };
-            int[] expect = { 1, 2, 3, 3 };
-            int[] result = test.Run(input, 2);
-            Assert.AreEqual(expect, result);
-        }
+        [TestCase(
+            new int[] { 1, 2, 3, 3, 3 }, 2,
+            ExpectedResult = new int[] { 1, 2, 3, 3 }
+        )]
 
-        [Test]
-        public void RandomTest1()
+        [TestCase(
+            new int[] { 1, 1, 3, 3, 7, 2, 2, 2, 2 }, 3,
+            ExpectedResult = new int[] { 1, 1, 3, 3, 7, 2, 2, 2 }
+        )]
+
+        public int[] DivideTest(int[] input, int limit)
         {
-            int[] input = { 1, 1, 3, 3, 7, 2, 2, 2, 2 };
-            int[] expect = { 1, 1, 3, 3, 7, 2, 2, 2 };
-            int[] result = test.Run(input, 3);
-            Assert.AreEqual(expect, result);
+            return test.Run(input, limit);
         }
     }
 }
