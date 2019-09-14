@@ -5,7 +5,7 @@ namespace Tests
 {
     public class Tests
     {
-        DeleteNth test = new DeleteNth();
+        readonly DeleteNth test = new DeleteNth();
 
         [TestCase(
             new int[] { 1, 2, 3 }, 2,
@@ -33,5 +33,3 @@ namespace Tests
         }
     }
 }
-
-// Expected: 1,3,1,3,2,2 Actual: 1,3,1,3,2,2,3
