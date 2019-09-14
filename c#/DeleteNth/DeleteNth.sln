@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteNth", "DeleteNth\DeleteNth.csproj", "{910BB48E-BC6A-4F62-9474-BD69DBACAFD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeleteNthTests", "DeleteNthTests\DeleteNthTests.csproj", "{6B38165B-046A-4DA7-A9DA-9054B07BF01A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{910BB48E-BC6A-4F62-9474-BD69DBACAFD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{910BB48E-BC6A-4F62-9474-BD69DBACAFD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{910BB48E-BC6A-4F62-9474-BD69DBACAFD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{910BB48E-BC6A-4F62-9474-BD69DBACAFD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B38165B-046A-4DA7-A9DA-9054B07BF01A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B38165B-046A-4DA7-A9DA-9054B07BF01A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B38165B-046A-4DA7-A9DA-9054B07BF01A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B38165B-046A-4DA7-A9DA-9054B07BF01A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
