@@ -25,14 +25,8 @@ namespace Kata
 
         private void CountNumbers(Hashtable table, int number)
         {
-            if (table.Contains(number))
-            {
-                table[number] = (int)table[number] + 1;
-            }
-            else
-            {
-                table.Add(number, 1);
-            }
+            if (table.Contains(number)) table[number] = (int)table[number] + 1;
+            else table.Add(number, 1);
         }
     }
 }
